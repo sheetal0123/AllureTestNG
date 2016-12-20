@@ -1,0 +1,71 @@
+{
+  "uid" : "330c0804c8ca5802",
+  "name" : "testImageAttachmentExample",
+  "title" : "Test image attachment example",
+  "time" : {
+    "start" : 1482218634735,
+    "stop" : 1482218645156,
+    "duration" : 10421
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "858f1d4a175c14e6",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ {
+    "name" : "checkResult2[2, 2]",
+    "title" : "Check calculation result",
+    "time" : {
+      "start" : 1482218645154,
+      "stop" : 1482218645156,
+      "duration" : 2
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Image attach",
+      "source" : "7b8db58e-a0e4-4c4c-8950-38569ef2759f-attachment.png",
+      "type" : "image/png",
+      "size" : 20924,
+      "uid" : "dfbd26ded2c1ad3f"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "13773@xetmacsheetals.xebiaindia.local.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Image Attachment Type 2: Abc"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "host",
+    "value" : "xetmacsheetals.xebiaindia.local"
+  } ],
+  "parameters" : [ ]
+}

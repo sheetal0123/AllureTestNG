@@ -1,0 +1,71 @@
+{
+  "uid" : "e6d5fad1669b3099",
+  "name" : "testHtmlAttachmentExample",
+  "title" : "Test html attachment example",
+  "time" : {
+    "start" : 1482218634728,
+    "stop" : 1482218634734,
+    "duration" : 6
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "858f1d4a175c14e6",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ {
+    "name" : "checkResultForHtml[2, 2]",
+    "title" : "Check of calculation",
+    "time" : {
+      "start" : 1482218634730,
+      "stop" : 1482218634734,
+      "duration" : 4
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Html attach",
+      "source" : "daa41f45-cd2b-4ed7-954c-b9adbbde71ce-attachment.html",
+      "type" : "text/html",
+      "size" : 150,
+      "uid" : "2333e067baf2e383"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "feature",
+    "value" : "Html Attachment Case"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "13773@xetmacsheetals.xebiaindia.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "host",
+    "value" : "xetmacsheetals.xebiaindia.local"
+  } ],
+  "parameters" : [ ]
+}

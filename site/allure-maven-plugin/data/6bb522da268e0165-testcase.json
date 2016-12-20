@@ -1,0 +1,59 @@
+{
+  "uid" : "6bb522da268e0165",
+  "name" : "one",
+  "title" : "This test check Google title",
+  "time" : {
+    "start" : 1482218627999,
+    "stop" : 1482218634289,
+    "duration" : 6290
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Description: We need to verify if Google page loads properly",
+    "type" : "TEXT"
+  },
+  "severity" : "CRITICAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "858f1d4a175c14e6",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "story",
+    "value" : "Google Stories is for BDD reporting"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "thread",
+    "value" : "13773@xetmacsheetals.xebiaindia.local.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Simple Reporting for Google: 1"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "host",
+    "value" : "xetmacsheetals.xebiaindia.local"
+  } ],
+  "parameters" : [ ]
+}

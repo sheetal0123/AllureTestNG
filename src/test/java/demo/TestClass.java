@@ -45,8 +45,12 @@ public class TestClass {
 		driver.quit();
 	}
 	
-
-	@Features("Google feature is for BDD reporting")
+	//-----------------------------------Section 1------------------------------------------//
+	/**
+	 * Simple test cases which explains how we can use feature, stories, title of test cases which comes in reporting
+	 */
+	
+	@Features("Simple Reporting for Google: 1")
 	@Stories("Google Stories is for BDD reporting")
 	@Severity(SeverityLevel.CRITICAL)
 	@Title("This test check Google title")
@@ -59,7 +63,7 @@ public class TestClass {
 	}
 	
 
-	@Features("Yahoo feature is for BDD reporting")
+	@Features("Simple Reporting for Yahoo: 2")
 	@Stories("Yahoo Stories is for BDD reporting")
 	@Severity(SeverityLevel.CRITICAL)
 	@Title("This test check Yahoo title")
@@ -71,7 +75,7 @@ public class TestClass {
 		Assert.assertTrue(driver.getTitle().equals("Yahoo"),"Yahoo actual title: "+driver.getTitle());
 	}
 
-	@Features("Bing feature is for BDD reporting")
+	@Features("Simple Reporting for Bing: 3")
 	@Stories("Bing Stories is for BDD reporting")
 	@Severity(SeverityLevel.CRITICAL)
 	@Title("This test check Bing title")
@@ -84,7 +88,7 @@ public class TestClass {
 	}
 
 
-	@Features("Maths feature is for BDD reporting")
+	@Features("Simple Math Problem : 4")
 	@Stories("Maths Stories is for BDD reporting")
 	@Severity(SeverityLevel.CRITICAL)
 	@Title("Maths problems")
@@ -107,17 +111,21 @@ public class TestClass {
 	}
 	
 	@Step("{0}")
-    private void log(String value) {
+    private void log123(String value) {
         //empty method
     }
 	
 	
 	
-	//-----------------------------------------------------------------------------//
+	//-------------------------------Section 2----------------------------------------------//
+
 	
 	/**
 	 * To attach simple text file with test case
 	 * Used when we want to log some requests and responses to some of your servers.
+	 * 
+	 * This will generate a .txt file who's content will be "I am a log file or exception"
+	 * File location: /AllureTestNG/site/allure-maven-plugin/data/<some-random-name>.txt
 	 */
 
 	@Attachment(value = "{0}", type = "text/plain")
@@ -125,16 +133,16 @@ public class TestClass {
 	    return message;
 	}
 	
-	@Features("Wiki feature for BDD reporting")
+	@Features("Text File Attachment")
 	@Test
 	public void attachSimpleTextFile(){
 		driver.get("https://en.wikipedia.org/wiki/Main_Page");
-		saveTextLog("TextException", "I am a log file or exception");
+		saveTextLog("LogFile", "I am a log file or exception");
 	}
 	
 	
 	
-	//-----------------------------------------------------------------------------//
+	//------------------------------Section 3: Image Type 1-----------------------------------------------//
 	
 	/**
 	 * To attach image file with test case
@@ -147,20 +155,13 @@ public class TestClass {
 		byte [] res = null;
 		
 	    try {
-	        
-	    	BufferedImage image = ImageIO.read(new File(System.getProperty("user.dir")+"/src/test/resources/allure.png"));
+	    	BufferedImage image = ImageIO.read(new File(System.getProperty("user.dir")+"/src/test/resources/spicejet.png"));
 	    	ByteArrayOutputStream baos = new ByteArrayOutputStream(); 
 	    	ImageIO.write(image, "png", baos); 
 	    	res=baos.toByteArray();
-
-//	    	URL defaultImage = TestClass.class.getResource("/allure.png");
-//	        File imageFile = new File(defaultImage.toURI());
-//	        return toByteArray(imageFile);
-//	    	return res;
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
-//	    return new byte[0];
 	    return res;
 	}
 
@@ -169,7 +170,7 @@ public class TestClass {
 	}	
 	
 	
-	@Features("Github feature for BDD reporting")
+	@Features("Image Attachment Type 1: Github")
 	@Test
 	public void attachImageFile(){
 		driver.get("https://github.com/");
@@ -177,39 +178,75 @@ public class TestClass {
 	}
 	
 	
-	//-----------------------------------------------------------------------------//
+	//--------------------------------Section 3: Image Type 2---------------------------------------------//
+
 	
-	/**
-	 * To attach html with test case
-	 */
-	
-	@Attachment(value = "{0}", type = "text/html")
-	public static byte[] saveHtmlAttach(String attachName) {
-		
-		byte [] res = null;
-		
+	@Attachment(value = "{0}", type = "image/png")
+	public static byte[] saveImageAttach2(String attachName) {
 	    try {
-	    	BufferedImage htmlFile = ImageIO.read(new File(System.getProperty("user.dir")+"/src/test/resources/test.html"));
-	    	ByteArrayOutputStream baos = new ByteArrayOutputStream(); 
-	    	ImageIO.write(htmlFile, "html", baos); 
-	    	res=baos.toByteArray();
+	        URL defaultImage = TestClass.class.getResource("/bars.png");
+	        File imageFile = new File(defaultImage.toURI());
+	        return toByteArray2(imageFile);
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
-	    return res;
+	    return new byte[0];
+	}
+
+	private static byte[] toByteArray2(File file) throws IOException {
+	    return Files.readAllBytes(Paths.get(file.getPath()));
+	}
+		
+	
+	@Step("Check calculation result")
+	private void checkResult2(int actualResult, int expectedResult) {
+	    saveImageAttach2("Image attach");
+	    Assert.assertTrue(actualResult == expectedResult, "Actual result(" + actualResult + ") not equals to expected(" + expectedResult + ")");
 	}
 	
-	
-	@Features("Allure feature for BDD reporting")
+	@Features("Image Attachment Type 2: Abc")
 	@Test
-	public void attachHtmlFile(){
-		driver.get("http://www.allure.com/");
-		saveImageAttach("HTML File");
+	public void testImageAttachmentExample() {
+		driver.get("http://abc.go.com/");
+	    checkResult2(4 / 2, 2);
 	}
 	
 	
-	//-----------------------------------------------------------------------------//
+	
+	//--------------------------------Section 4: Html attachment---------------------------------------------//
+	
+	/**
+	 * To attach html with test case
+	 * 
+	 * This will generate .html file 
+	 * /AllureTestNG/site/allure-maven-plugin/data/<some-random-name>.html
+	 */
+	
+
+	@Attachment(value = "{0}", type = "text/html")
+	public static byte[] saveHtmlAttach(String attachName) {
+	    try {
+	        URL defaultImage = TestClass.class.getResource("/htmlreport.html");
+	        File imageFile = new File(defaultImage.toURI());
+	        return toByteArray(imageFile);
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	    return new byte[0];
+	}
+	
+	@Features("Html Attachment Case")
+	@Test
+	public void testHtmlAttachmentExample() {
+	    checkResultForHtml(4 / 2, 2);
+	}
+
+	@Step("Check of calculation")
+	private void checkResultForHtml(int actualResult, int expectedResult) {
+	    saveHtmlAttach("Html attach");
+	    Assert.assertTrue(actualResult == expectedResult,"Actual result(" + actualResult + ") not equals to expected(" + expectedResult + ")");
+	}
+	
 
 	
-		
 }

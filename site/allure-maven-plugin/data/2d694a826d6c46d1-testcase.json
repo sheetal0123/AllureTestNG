@@ -1,0 +1,56 @@
+{
+  "uid" : "2d694a826d6c46d1",
+  "name" : "attachSimpleTextFile",
+  "title" : "Attach simple text file",
+  "time" : {
+    "start" : 1482218627958,
+    "stop" : 1482218627977,
+    "duration" : 19
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "858f1d4a175c14e6",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "LogFile",
+    "source" : "f32424df-286b-48b8-ade7-fefb52dc93bb-attachment.txt",
+    "type" : "text/plain",
+    "size" : 28,
+    "uid" : "d4837f069351eee8"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "feature",
+    "value" : "Text File Attachment"
+  }, {
+    "name" : "thread",
+    "value" : "13773@xetmacsheetals.xebiaindia.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "host",
+    "value" : "xetmacsheetals.xebiaindia.local"
+  } ],
+  "parameters" : [ ]
+}

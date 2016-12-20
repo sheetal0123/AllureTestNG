@@ -1,0 +1,275 @@
+{
+  "features" : [ {
+    "title" : "Image Attachment Type 1: Github",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "953ce90d9de98b7e",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "53b01f79367d8006",
+        "name" : "attachImageFile",
+        "title" : "Attach image file",
+        "time" : {
+          "start" : 1482218618610,
+          "stop" : 1482218627516,
+          "duration" : 8906
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Text File Attachment",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "4f05cb20fc24956f",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "2d694a826d6c46d1",
+        "name" : "attachSimpleTextFile",
+        "title" : "Attach simple text file",
+        "time" : {
+          "start" : 1482218627958,
+          "stop" : 1482218627977,
+          "duration" : 19
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Simple Math Problem : 4",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "9b0ce4a8c50eb730",
+      "title" : "Maths Stories is for BDD reporting",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "29dc7b094f703654",
+        "name" : "four",
+        "title" : "Maths problems",
+        "time" : {
+          "start" : 1482218627979,
+          "stop" : 1482218627997,
+          "duration" : 18
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Simple Reporting for Google: 1",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "e58b1967bb46fea9",
+      "title" : "Google Stories is for BDD reporting",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "6bb522da268e0165",
+        "name" : "one",
+        "title" : "This test check Google title",
+        "time" : {
+          "start" : 1482218627999,
+          "stop" : 1482218634289,
+          "duration" : 6290
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Html Attachment Case",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "565e25486ca83675",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "e6d5fad1669b3099",
+        "name" : "testHtmlAttachmentExample",
+        "title" : "Test html attachment example",
+        "time" : {
+          "start" : 1482218634728,
+          "stop" : 1482218634734,
+          "duration" : 6
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Image Attachment Type 2: Abc",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "c02002a28fec6e67",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "330c0804c8ca5802",
+        "name" : "testImageAttachmentExample",
+        "title" : "Test image attachment example",
+        "time" : {
+          "start" : 1482218634735,
+          "stop" : 1482218645156,
+          "duration" : 10421
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Simple Reporting for Bing: 3",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "c7a1dc920f6ef1bb",
+      "title" : "Bing Stories is for BDD reporting",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "7a452a5361b75227",
+        "name" : "three",
+        "title" : "This test check Bing title",
+        "time" : {
+          "start" : 1482218645550,
+          "stop" : 1482218646727,
+          "duration" : 1177
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  }, {
+    "title" : "Simple Reporting for Yahoo: 2",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "4869eec984d2e3e0",
+      "title" : "Yahoo Stories is for BDD reporting",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "1b9c8a9c8e75872b",
+        "name" : "two",
+        "title" : "This test check Yahoo title",
+        "time" : {
+          "start" : 1482218646728,
+          "stop" : 1482218664717,
+          "duration" : 17989
+        },
+        "severity" : "CRITICAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}
