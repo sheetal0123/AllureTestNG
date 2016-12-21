@@ -134,7 +134,7 @@ public class TestClass {
 	}
 	
 	@Features("Text File Attachment")
-	@Test
+	//@Test
 	public void attachSimpleTextFile(){
 		driver.get("https://en.wikipedia.org/wiki/Main_Page");
 		saveTextLog("LogFile", "I am a log file or exception");
@@ -171,7 +171,7 @@ public class TestClass {
 	
 	
 	@Features("Image Attachment Type 1: Github")
-	@Test
+	//@Test
 	public void attachImageFile(){
 		driver.get("https://github.com/");
 		saveImageAttach("Image attached");
@@ -205,7 +205,7 @@ public class TestClass {
 	}
 	
 	@Features("Image Attachment Type 2: Abc")
-	@Test
+	//@Test
 	public void testImageAttachmentExample() {
 		driver.get("http://abc.go.com/");
 	    checkResult2(4 / 2, 2);
@@ -236,7 +236,7 @@ public class TestClass {
 	}
 	
 	@Features("Html Attachment Case")
-	@Test
+	//@Test
 	public void testHtmlAttachmentExample() {
 	    checkResultForHtml(4 / 2, 2);
 	}
